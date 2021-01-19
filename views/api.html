@@ -1,0 +1,80 @@
+<h1>AirlineStats API:</h1>
+  
+<h2>Endpoints:</h2>
+<ul>
+  <li><strong>api/flights</strong></li>
+    <h4>Accepted Methods:</h4>
+    <ul>
+      <li>GET</li>
+    </ul>
+
+   <h4>Headers:</h4>
+    <h3>From</h3>
+        <ul>
+            <li><strong>REQUIRED</strong></li>
+            <li>Type: [ AirlineCode ]</li>
+            <li>Description: Location of departure</li>
+        </ul>
+    <h3>To</h3>
+        <ul>
+            <li><strong>REQUIRED</strong></li>
+            <li>Type: [ AirlineCode ]</li>
+            <li>Description: Location of arrival</li>
+        </ul>
+    <h3>Departure Date</h3>
+        <ul>
+            <li><strong>REQUIRED</strong></li>
+            <li>Type: [ Date ]</li>
+            <li>Description: Date of departure</li>
+        </ul>
+    <h3>Arrival Date</h3>
+        <ul>
+            <li><strong>REQUIRED</strong></li>
+            <li>Type: [ Date ]</li>
+            <li>Description: Date of arrival</li>
+        </ul>
+    <h3>Round Trip</h3>
+        <ul>
+            <li>Default = false</li>
+            <li>Type: [ Boolean ]</li>
+            <li>Description: Filter only round trip flights</li>
+        </ul>
+    <h3>Occupants</h3>
+        <ul>
+            <li>Default = 1</li>
+            <li>Type: [ Integer ]</li>
+            <li>Description: Amount of occupants</li>
+        </ul>
+    <h3>Stops</h3>
+        <ul>
+            <li>Default = false</li>
+            <li>Type: [ Boolean ]</li>
+            <li>Description: Allow flights with stops</li>
+        </ul>
+    <h3>Class</h3>
+        <ul>
+            <li>Default = 1</li>
+            <ul>
+                <li>1 = Economy</li>
+                <li>2 = Premium economy</li>
+                <li>3 = Buisness / First</li>
+            </ul>
+            <li>Type: [ Integer ]</li>
+            <li>Description: Class of flight</li>
+        </ul>
+    <h3>Sort</h3>
+    <ul>
+        <li>Default = 1</li>
+        <ul>
+            <li>1 = Sort by price</li>
+            <li>2 = Sort by flight duration</li>
+        </ul>
+        <li>Type: [ Integer ]</li>
+        <li>Description: Sort results</li>
+    </ul>
+  <h4>Example:</h4>
+  <p>{}</p>
+ <li<strong>api/status</strong></li>
+</ul>
+
+
