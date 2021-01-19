@@ -3,6 +3,8 @@ const https = require("http");
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 function getAirlineCodes() {
   return new Promise(resolve => {
     https.get('http://www.airportcodes.org/', resp => {
